@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DiscoverFragment"
+    android:background="#EEEEF6">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#96C5F2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Discover"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textColor="#0F2B61"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/discoverimg"
+                android:layout_marginTop="122dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="391dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Services by KC"
+                android:layout_marginLeft="19dp"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/viewall_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="398dp"
+                android:fontFamily="@font/niramit"
+                android:text="View all >"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/counselling" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="Counselling"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="113dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="Plan your academic and career goals"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/testprep" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="Test Preparation"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="113dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="Effortlessly reach your highest potential goal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/globe" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="University Selection"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="113dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="Select University effortlessly"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/application" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="Application and Admission"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="125dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="Apply to your preferred universities"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/loan" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="Education Loan"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="113dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="Apply for loan and acquire requisite financials"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/visa" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="Visa Processing"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="113dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="Pay deposit, accept offer and apply for visa"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="211dp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="456dp"
+                        android:layout_marginRight="14dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/support" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="75dp"
+                            android:fontFamily="@font/francois_one"
+                            android:text="Additional Support"
+                            android:textAlignment="center"
+                            android:textColor="#0F2B61"
+                            android:textSize="19dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="113dp"
+                            android:fontFamily="@font/niramit"
+                            android:text="We will be there for you always"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

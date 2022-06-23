@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    android:id="@+id/home_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:src="@drawable/homeimg" />
+
+        <Button
+            android:id="@+id/homecontact_button"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+
+            android:layout_marginTop="160dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#DAE5FE"
+            android:text="Contact Us"
+            android:textAlignment="center"
+            android:textColor="#226BF5"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_marginTop="380dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#FD9450"
+            android:text="Book Free Counselling"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FaqsFragment"
+    android:background="#EEEEF6">
+
+    <!-- TODO: Update blank fragment layout -->
+
+         <!--<androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            /> -->
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <androidx.viewpager2.widget.ViewPager2
+          android:id="@+id/Viewpager"
+          android:layout_width="match_parent"
+          android:layout_height="190dp"
+          android:background="@drawable/view_pager_background" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frequently asked Questions"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:paddingTop="45dp"
+            />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="220dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question"
+                android:text="When is the right time for submitting an application to the Universities?"
+                android:textColor="#808080"
+                android:textSize="20dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+
+                />
+
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:padding="16dp"
+                    android:text="Every foreign University/College has their intakes
+during a year. Some have two intakes while others
+may have three or only one or a rolling intake
+during the academic year"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+
+                    />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="440dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="18dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is an application package?"
+            android:textColor="#808080"
+            android:textSize="20dp"
+            android:padding="16dp"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="An application package consists of the material required by the University. It consists of Application forms, Application fees, Recommendations, Transcripts and mark sheets, Essays, Financial aid form"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:padding="16dp"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="640dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="18dp"
+            app:cardUseCompatPadding="true"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What are the entry requirements to be accepted into a course?"
+                android:textColor="#808080"
+                android:textSize="20dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="Every University has it's set of eligibility criteria which mostly includes minimum academic requirements, English language and entrance test requirements, relevant work experience etc. Your education counsellor can help you identify relevant programs as per your profile"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="16dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="902dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="18dp"
+            app:cardUseCompatPadding="true"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Can students change their major upon reaching the University?"
+                android:textColor="#808080"
+                android:textSize="20dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="Yes, certainly. In fact, most undergraduate students change their major at least once during their four-year course of study. Most Universities abroad allow students the flexibility to change their major as they wish."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="16dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="1145dp"
+            android:layout_marginBottom="35dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="18dp"
+            app:cardUseCompatPadding="true"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is financial aid?"
+                android:textColor="#808080"
+                android:textSize="20dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Financial aid is a means by which students can reduce or eliminate the expenses that they will incur in the course of their education overseas."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="16dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+</FrameLayout>
+
