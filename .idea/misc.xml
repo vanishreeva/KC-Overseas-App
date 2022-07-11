@@ -4,20 +4,51 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/circle.xml" value="0.1635" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/ic_contact.xml" value="0.2275" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/ic_discover.xml" value="0.124" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/ic_faqs.xml" value="0.2275" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/ic_home.xml" value="0.124" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/ic_mail.xml" value="0.148" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/rounded_rec.xml" value="0.1165" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/roundstyle.xml" value="0.168" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/drawable/view_pager_background.xml" value="0.1" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_act.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_allblogs.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_australia.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_blog1.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_blog2.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_blog3.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_canada.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_contact.xml" value="0.2" />
-        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_discover.xml" value="0.23946360153256704" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_discover.xml" value="0.16969147005444646" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_dubai.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_duolingo.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_faqs.xml" value="0.2" />
-        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_france.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_germany.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_gmat.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_gre.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_ielts.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_internships.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_ireland.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_loans.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_location.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_netherlands.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_newzealand.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_pte.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_sat.xml" value="0.10029251984956122" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_scholarship.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_singapore.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_sweden.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_test_prep.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_toefl.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_uk.xml" value="0.1936725096194955" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_universities.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_usa.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_viewall_services.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/fragment_webview.xml" value="0.1" />
         <entry key="..\:/Users/Vanishree VA/AndroidStudioProjects/KCAPP/app/src/main/res/layout/row.xml" value="0.2" />

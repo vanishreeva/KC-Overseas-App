@@ -1,239 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.FaqsFragment"
-    android:background="#EEEEF6">
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-
-         <!--<androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recyclerView"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            /> -->
-
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-      <androidx.viewpager2.widget.ViewPager2
-          android:id="@+id/Viewpager"
-          android:layout_width="match_parent"
-          android:layout_height="190dp"
-          android:background="@drawable/view_pager_background" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Frequently asked Questions"
-            android:textSize="35dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:paddingLeft="15dp"
-            android:textColor="@color/black"
-            android:paddingTop="45dp"
-            />
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:cardCornerRadius="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="220dp"
-        app:cardElevation="3dp"
-        app:cardUseCompatPadding="true"
-        android:background="@color/white">
+        android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/Viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@drawable/view_pager_background"
+                tools:ignore="MissingConstraints" />
+
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/question"
-                android:text="When is the right time for submitting an application to the Universities?"
-                android:textColor="#808080"
-                android:textSize="20dp"
-                android:padding="16dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="45dp"
+                android:text="Frequently asked Questions"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="35dp"
                 android:textStyle="bold"
-
-                />
-
-
-                <TextView
-                    android:id="@+id/answer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
-                    android:padding="16dp"
-                    android:text="Every foreign University/College has their intakes
-during a year. Some have two intakes while others
-may have three or only one or a rolling intake
-during the academic year"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-
-                    />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_marginTop="440dp"
-        app:cardCornerRadius="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="18dp"
-        app:cardElevation="3dp"
-        app:cardUseCompatPadding="true"
-        android:background="@color/white">
-
+                tools:ignore="MissingConstraints" />
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:paddingTop="200dp"
+            android:fontFamily="@font/francois_one"
+            android:text="General FAQs"
+            android:textColor="#0F2B61"
+            android:textSize="22dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="When to submit Applications?"
+            app:text="Every foreign University/College has their intakes during a year. Some have two intakes while others may have three or only one or a rolling intake during the academic year. Majority Institutions in a particular country follow the same intake. Hence, you should initiate steps for admission process at least one year in advance for the respective intake. In some cases, you could begin these steps 3-4 months in advance as well."
+            app:titleSize="16sp"
+            app:textSize="16sp"
+            app:titleColor="@android:color/black"
+
+            app:textColor="@android:color/darker_gray"/>
+
+        <!-- Big text Accordion -->
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is an application package?"
-            android:textColor="#808080"
-            android:textSize="20dp"
-            android:padding="16dp"
-            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion"
+            app:text="An application package consists of the material required by the University. It consists of Application forms, Application fees, Recommendations, Transcripts and mark sheets, Essays, Financial aid form"
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            app:title="What is an application package?"
+            android:layout_marginTop="-20dp"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
-            />
 
 
-        <TextView
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="An application package consists of the material required by the University. It consists of Application forms, Application fees, Recommendations, Transcripts and mark sheets, Essays, Financial aid form"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion2"
+            app:text="It depends on the length and type of program you will be attending. Your eligibility to work will be shown on the immigration stamp in your passport. International students are allowed to work for 20 hours per week during term days and full time during holidays. Many institutions have 'Job shop' to help students find part-time jobs. Job vacancies are also advertised in newspapers and online. There are also many national and regional employment agencies, run by both government and private organizations, which can advise on the broad range of opportunities available to their client businesses and industries. Most employers will want to see your resume and sometimes; they take an interview before hiring."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
 
-            />
-    </androidx.cardview.widget.CardView>
+            android:layout_marginTop="-20dp"
+            app:title="Can one work while studying overseas?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="640dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="3dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="18dp"
-            app:cardUseCompatPadding="true"
-            android:background="@color/white">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion3"
+            app:text="Sandwich programs are made-up of a combination of periods of study and time spent in Industry. The course duration extends to 4-years instead of the usual 3-years, for all bachelors courses. Foundation programs are of a 1-year length and are tailored for students as an alternative route to bridge between their qualification and that, which is required for entry into a degree program at the International University or College"
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What are Sandwich programs?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What are the entry requirements to be accepted into a course?"
-                android:textColor="#808080"
-                android:textSize="20dp"
-                android:padding="16dp"
-                android:textStyle="bold"
-
-                />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="56dp"
-                android:text="Every University has it's set of eligibility criteria which mostly includes minimum academic requirements, English language and entrance test requirements, relevant work experience etc. Your education counsellor can help you identify relevant programs as per your profile"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:padding="16dp"
-
-                />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="902dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="3dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="18dp"
-            app:cardUseCompatPadding="true"
-            android:background="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Can students change their major upon reaching the University?"
-                android:textColor="#808080"
-                android:textSize="20dp"
-                android:padding="16dp"
-                android:textStyle="bold"
-
-                />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion4"
+            app:text="Yes, certainly. In fact, most undergraduate students change their major at least once during their four-year course of study. Most Universities abroad allow students the flexibility to change their major as they wish."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="Can I change major reaching University?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="56dp"
-                android:text="Yes, certainly. In fact, most undergraduate students change their major at least once during their four-year course of study. Most Universities abroad allow students the flexibility to change their major as they wish."
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:padding="16dp"
 
-                />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion6"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_marginTop="1145dp"
-            android:layout_marginBottom="35dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="3dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="18dp"
-            app:cardUseCompatPadding="true"
-            android:background="@color/white">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion5"
+            app:text="Financial aid is a means by which students can reduce or eliminate the expenses that they will incur in the course of their education overseas."
+            app:textColor="@android:color/darker_gray"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What is financial aid?"
-                android:textColor="#808080"
-                android:textSize="20dp"
-                android:padding="16dp"
-                android:textStyle="bold"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What is financial aid?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
-                />
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion6"
+            app:text="A University offers a financial aid package, which consists of scholarships/grant and an on-campus employment program for the student. Hence this package helps students to pay a significant amount of their total expenses while studying overseas."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What are financial aid packages?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:text="Financial aid is a means by which students can reduce or eliminate the expenses that they will incur in the course of their education overseas."
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:padding="16dp"
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion7"
+            app:text="Your education counsellor coordinates with the Universities, to send the financial aid form, which you should finish and submit before the financial aid deadline date mentioned in the application package of the respective University."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="How to apply for financial aid?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
-                />
-        </androidx.cardview.widget.CardView>
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion8"
+            app:text="Teaching assistants assist a professor by teaching an undergraduate class or checking exam papers. They are paid for this job, which covers most of their expenses while at the University."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What is Teaching Assistantship?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
 
-    </RelativeLayout>
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion9"
+            app:text="Research fellowship/assistantship is an award that allows you to work in the capacity of an assistant to a professor on the research project assigned to him. As a research assistant, the student receives the tuition waiver or pays in-state tuition fees and earns additionally to sustain living expenses through their education."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            app:title="What is Research Assistantship?"
+            app:titleColor="@android:color/black"
+            android:layout_marginTop="-20dp"
+            app:titleSize="16sp" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion10"
+            app:text="SFG is an initial used for Scholarships/Fellowship/Grants."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What are SFG's?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion11"
+            app:text="Tuition waivers are awards that waive one's tuition fees. These could range from partial to complete tuition waivers. Your education counsellor can help you identify and apply to such Universities."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What are tuition-waivers?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
+
+
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion12"
+            app:text="Student visas can be obtained given proper documentation. Most of the applicants from India who provide a confirmed offer from a University/College abroad and evidence of financial support for tuition fees and living costs are issued visas."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="Is it tough to get Visas?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion13"
+            app:text="The Visa application form is available, free of charge, from the Consulate. Alternatively, you could collect the same from your education counsellor"
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What about Visa application form?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion14"
+            app:text="Various documents can prove that you have permanent ties in India - namely property papers, job offer letters, awareness of the job market. But what will actually convince a Visa officer is your conviction. If you are not personally convinced that you need to come back to India, then it will be tough to prove it to somebody else as shrewd as a Visa officer."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="Documents for permanent ties in India?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion15"
+            app:text="There is no upper-limit to an amount of funds that you should show for your Visa Interview. However, you should show a little more than is necessary to cover your expenses abroad."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="How much money do I need to show?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp" />
+
+        <com.gouravkhunger.accolib.widget.Accordion
+            android:id="@+id/accordion17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accordion16"
+            app:text="Relax, there is absolutely no need to be nervous about the 'Student Visa Interview.' The people at the counter are friendly and will not grill you or have you for lunch! However, you should be thoroughly prepared for the questions. Your counsellor will help you prepare for the same."
+            app:textColor="@android:color/darker_gray"
+            app:textSize="16sp"
+            android:layout_marginTop="-20dp"
+            app:title="What questions are asked in the interview?"
+            app:titleColor="@android:color/black"
+            app:titleSize="16sp"
+            android:paddingBottom="25dp"/>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
-
-
-
-
-</FrameLayout>
-

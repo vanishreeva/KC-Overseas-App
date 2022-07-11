@@ -52,14 +52,14 @@ class ContactFragment : Fragment() {
             val webview = webview()
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
             transaction.replace(R.id.contact_fragment,webview)
-            transaction.commit()
+            transaction.addToBackStack(null).commit()
         }
         val loc = v.findViewById<ImageView>(R.id.location_contact)
         loc.setOnClickListener {
             val location = location()
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
             transaction.replace(R.id.contact_fragment,location)
-            transaction.commit()
+            transaction.addToBackStack(null).commit()
         }
 
         val call = v.findViewById<ImageView>(R.id.call_contact)

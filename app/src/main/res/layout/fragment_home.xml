@@ -4,48 +4,367 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment"
-    android:id="@+id/home_fragment">
+    android:id="@+id/home_fragment"
+    >
 
     <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="361dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
             android:src="@drawable/homeimg" />
 
         <Button
-            android:id="@+id/homecontact_button"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="210dp"
-
-            android:layout_marginTop="160dp"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="#DAE5FE"
-            android:text="Contact Us"
-            android:textAlignment="center"
-            android:textColor="#226BF5"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-
-        <Button
             android:id="@+id/book_button"
-            android:layout_width="280dp"
+            android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-
-
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="255dp"
             android:background="@drawable/roundstyle"
             android:backgroundTint="#FD9450"
             android:text="Book Free Counselling"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="17dp"
+            android:textSize="16dp"
             android:textStyle="bold" />
-    </RelativeLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="325dp"
+            android:fontFamily="@font/francois_one"
+            android:text="Popular Courses"
+            android:textColor="#0F2B61"
+            android:textSize="22dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="375dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/business_home"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_rec"
+                    />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/medical_home"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/media_home"
+                    android:layout_marginLeft="20dp" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/computer_home"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="565dp"
+            android:fontFamily="@font/francois_one"
+            android:text="Qualifying tests"
+            android:textColor="#0F2B61"
+            android:textSize="22dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="615dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sat"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_rec"
+                    android:backgroundTint="#FFE8C9"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="SAT"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/act"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#FDC98D"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="ACT"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/gre"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#FFE8C9"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="GRE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/gmat"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#FDC98D"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="GMAT"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ielts"
+
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#FFE8C9"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="IELTS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/pte"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#FDC98D"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="PTE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/toefl"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#FFE8C9"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="TOEFL"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/duolingo"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="#FDC98D"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:paddingTop="7dp"
+                    android:text="Duolingo"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="780dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="316dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/rounded_rec"
+                android:backgroundTint="#DCE8FF" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-235dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Test Coaching"
+                android:textAlignment="center"
+                android:textColor="#0F2B61"
+                android:textSize="22dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/niramit"
+                android:text="Coaching for exams to get \n admission in top notch
+\nuniversities overseas"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/test_prep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_rec"
+                android:backgroundTint="#7C9CDC"
+                android:fontFamily="@font/francois_one"
+                android:padding="10dp"
+                android:text="Know More"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="1080dp"
+            android:fontFamily="@font/francois_one"
+            android:text="Popular Study Destination"
+            android:textColor="#0F2B61"
+            android:textSize="22dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1140dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/home_usa"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/home_usa"
+                  />
+
+                <ImageView
+                    android:id="@+id/home_canada"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/home_canada" />
+
+                <ImageView
+                    android:id="@+id/home_uk"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/home_uk" />
+
+                <ImageView
+                    android:id="@+id/home_australia"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/home_australia" />
+
+                <ImageView
+                    android:id="@+id/home_germany"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/home_germany" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    </ScrollView>
 </FrameLayout>

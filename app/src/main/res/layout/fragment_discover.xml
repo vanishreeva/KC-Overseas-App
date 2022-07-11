@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.DiscoverFragment"
-    android:background="#EEEEF6">
+
+    android:id="@+id/discover_fragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,28 +43,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="391dp"
+                android:layout_marginTop="380dp"
                 android:fontFamily="@font/francois_one"
                 android:text="Services by KC"
                 android:layout_marginLeft="19dp"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
 
-            <TextView
+
+
+            <Button
                 android:id="@+id/viewall_discover"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="310dp"
-                android:layout_marginTop="398dp"
                 android:fontFamily="@font/niramit"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="378dp"
                 android:text="View all >"
                 android:textColor="@color/black"
-                android:textSize="17dp" />
+                android:textSize="16dp"
+                android:backgroundTint="@color/white"
+
+
+
+                android:textAllCaps="false"
+
+                />
 
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -70,10 +82,11 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/counselling"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="3dp"
@@ -110,11 +123,12 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/test"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="3dp"
@@ -152,10 +166,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/university"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="3dp"
@@ -195,10 +210,11 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/application"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="3dp"
@@ -238,10 +254,11 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/edu"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="3dp"
@@ -279,10 +296,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/visa"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="3dp"
@@ -320,10 +338,11 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/additional"
                         android:layout_width="211dp"
                         android:layout_height="186dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="456dp"
+                        android:layout_marginTop="440dp"
                         android:layout_marginRight="14dp"
                         android:background="@color/white"
                         app:cardCornerRadius="10dp"
@@ -365,13 +384,599 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="670dp"
+                android:background="#DBD9F7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="700dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Universities"
+                android:textAlignment="center"
+                android:textColor="#0F2B61"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="755dp"
+                android:fontFamily="@font/niramit"
+                android:text="700+ Global Universities to choose from"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/uni_knowmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="845dp"
+                android:background="@drawable/rounded_rec"
+                android:backgroundTint="#887BB0"
+                android:fontFamily="@font/francois_one"
+                android:padding="10dp"
+                android:text="Know More"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="950dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Areas of Study"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="990dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                    <TextView
+                        android:layout_width="163dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/francois_one"
+                        android:backgroundTint="#FFE8C9"
+                        android:background="@drawable/rounded_rec"
+                        android:text="Computer Science and IT"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:layout_width="163dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_rec"
+                        android:backgroundTint="#FDC98D"
+                        android:fontFamily="@font/francois_one"
+                        android:text="Business and Management"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+                    <TextView
+                        android:layout_width="163dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="25dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_rec"
+                        android:backgroundTint="#FFE8C9"
+                        android:paddingTop="15dp"
+                        android:fontFamily="@font/francois_one"
+                        android:text="Media and Journaling"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="163dp"
+                            android:layout_height="70dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="20dp"
+                            android:padding="10dp"
+                            android:background="@drawable/rounded_rec"
+                            android:fontFamily="@font/francois_one"
+                            android:backgroundTint="#FDC98D"
+                            android:paddingTop="15dp"
+                            android:text="Banking and Finance"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/francois_one"
+                    android:background="@drawable/rounded_rec"
+                    android:backgroundTint="#FFE8C9"
+                    android:paddingTop="15dp"
+                    android:text="Health and Nursing"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:backgroundTint="#FDC98D"
+                    android:text="Engineering"
+                    android:paddingTop="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                     />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="50dp"
+                    android:paddingTop="15dp"
+                    android:fontFamily="@font/francois_one"
+                    android:background="@drawable/rounded_rec"
+                    android:backgroundTint="#FFE8C9"
+                    android:text="Agriculture"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                     />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_rec"
+                    android:fontFamily="@font/francois_one"
+                    android:backgroundTint="#FDC98D"
+                    android:textAlignment="center"
+                    android:text="Art and Design"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+    </LinearLayout>
+                </LinearLayout>
+</HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="1210dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Study Destination"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1250dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/countries"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/usa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/usa"
+            android:layout_marginRight="20dp"
+            />
+        <ImageView
+            android:id="@+id/netherlands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/netherlands"
+            android:layout_marginTop="25dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/canada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/canada"
+                android:layout_marginRight="20dp"
+                />
+            <ImageView
+                android:id="@+id/sweden"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sweden"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ireland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ireland"
+                android:layout_marginRight="20dp"
+                />
+            <ImageView
+                android:id="@+id/australia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/australia"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/france"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/france"
+                android:layout_marginRight="20dp"
+                />
+            <ImageView
+                android:id="@+id/newzealand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/newze"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/germany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/germany"
+                android:layout_marginRight="20dp"
+                />
+            <ImageView
+                android:id="@+id/singapore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/singapore"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/uk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uk"
+                android:layout_marginRight="20dp"
+                android:paddingRight="20dp"
+                />
+            <ImageView
+                android:id="@+id/dubai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dubai"
+                android:layout_marginTop="25dp"
+                android:paddingRight="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1630dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#DCE8FF" />
 
 
 
+                <TextView
+                    android:layout_marginTop="-210dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/francois_one"
+                    android:text="Scholarships"
+                    android:textAlignment="center"
+                    android:textColor="#0F2B61"
+                    android:textSize="30dp" />
 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/niramit"
+                    android:text="Top global scholarships for you!"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:id="@+id/scholarship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_rec"
+                    android:backgroundTint="#7C9CDC"
+                    android:fontFamily="@font/francois_one"
+                    android:padding="10dp"
+                    android:text="Explore Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1910dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="450dp"
+                    android:background="@drawable/rounded_rec"
+
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="#EEEEF6" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-450dp"
+                    android:src="@drawable/loans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/francois_one"
+                    android:text="Education Loans"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/niramit"
+                    android:padding="30dp"
+                    android:text="Loans to empower your global study dreams"
+                    android:textAlignment="center"
+
+                    android:textColor="#0F2B61"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:id="@+id/loans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_rec"
+                    android:backgroundTint="#0F2B61"
+                    android:fontFamily="@font/francois_one"
+                    android:padding="10dp"
+                    android:text="Learn More"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2393dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="#FEDED9" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-200dp"
+                    android:fontFamily="@font/francois_one"
+                    android:text="Internships"
+                    android:textAlignment="center"
+                    android:textColor="#0F2B61"
+                    android:textSize="30dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/niramit"
+                    android:text="Learn, get Hired and Earn"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:id="@+id/internship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_rec"
+                    android:backgroundTint="#FCA37F"
+                    android:fontFamily="@font/francois_one"
+                    android:padding="10dp"
+                    android:text="Know More"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="2650dp"
+                android:fontFamily="@font/francois_one"
+                android:text="Blogs"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+            <Button
+                android:id="@+id/blogs_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/niramit"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2648dp"
+                android:text="See all >"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:backgroundTint="@color/white"
+                android:textAllCaps="false"
+                />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2710dp"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/blog2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blog2"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/blog3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blog3"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/blog1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blog1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    />
+
+            </LinearLayout>
+
+            </HorizontalScrollView>
 
 
         </RelativeLayout>
+
+
+
+
+
+
+
     </ScrollView>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

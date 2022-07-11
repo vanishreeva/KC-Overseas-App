@@ -62,6 +62,7 @@ class webview : Fragment() {
                 view.loadUrl(url)
                 return true
             }
+
         }
 
         myWebView.loadUrl("https://www.studies-overseas.com/contact-us")
@@ -74,4 +75,7 @@ class webview : Fragment() {
 
     }
 
+
+
 }
+

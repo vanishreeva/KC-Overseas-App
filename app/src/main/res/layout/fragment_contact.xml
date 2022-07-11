@@ -66,14 +66,14 @@
 
             android:layout_marginLeft="24dp"
             android:layout_marginTop="235dp"
-            android:background="@color/white"
+            android:background="@drawable/rounded_rec"
+            android:backgroundTint="@color/white"
             android:paddingTop="25dp"
             android:text="Bengaluru Branch"
             android:textAlignment="center"
             android:textColor="#003399"
             android:textSize="28dp"
-            android:textStyle="bold"
-           />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/location_contact"

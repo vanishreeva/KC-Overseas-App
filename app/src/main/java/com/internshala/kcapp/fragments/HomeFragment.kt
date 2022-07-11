@@ -5,18 +5,21 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.content.pm.PackageManager
-import android.widget.Toast
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.findFragment
+import androidx.media2.MediaController
 import com.internshala.kcapp.R
 import kotlinx.android.synthetic.main.fragment_contact.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import java.net.URI
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -48,14 +51,7 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_home, container, false)
-        val bt = v.findViewById<Button>(R.id.homecontact_button)
 
-        bt.setOnClickListener {
-            val contact = ContactFragment()
-            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
-            transaction.replace(R.id.home_fragment,contact)
-            transaction.commit()
-        }
 
         val call = v.findViewById<Button>(R.id.book_button)
 
@@ -63,6 +59,128 @@ class HomeFragment : Fragment() {
             call(v)
         }
 
+        val usa = v.findViewById<ImageView>(R.id.home_usa)
+        usa.setOnClickListener {
+            val home_usa = usa()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,home_usa)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val canada = v.findViewById<ImageView>(R.id.home_canada)
+        canada.setOnClickListener {
+            val home_canada = canada()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,home_canada)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val uk = v.findViewById<ImageView>(R.id.home_uk)
+        uk.setOnClickListener {
+            val home_uk = uk()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,home_uk)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val australia = v.findViewById<ImageView>(R.id.home_australia)
+        australia.setOnClickListener {
+            val home_australia = australia()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,home_australia)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val germany = v.findViewById<ImageView>(R.id.home_germany)
+        germany.setOnClickListener {
+            val home_germany = germany()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,home_germany)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test = v.findViewById<Button>(R.id.test_prep)
+        test.setOnClickListener {
+            val test_prep = test_prep()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,test_prep)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test1 = v.findViewById<TextView>(R.id.sat)
+        test1.setOnClickListener {
+            val sat = sat()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,sat)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test2 = v.findViewById<TextView>(R.id.act)
+        test2.setOnClickListener {
+            val act = act()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,act)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test3 = v.findViewById<TextView>(R.id.gre)
+        test3.setOnClickListener {
+            val gre = gre()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,gre)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test4 = v.findViewById<TextView>(R.id.gmat)
+        test4.setOnClickListener {
+            val gmat = gmat()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,gmat)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test5 = v.findViewById<TextView>(R.id.ielts)
+        test5.setOnClickListener {
+            val ielts = ielts()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,ielts)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test6 = v.findViewById<TextView>(R.id.pte)
+        test6.setOnClickListener {
+            val pte = pte()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,pte)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test7 = v.findViewById<TextView>(R.id.toefl)
+        test7.setOnClickListener {
+            val to =toefl()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,to)
+            transaction.addToBackStack(null).commit()
+        }
+
+        val test8 = v.findViewById<TextView>(R.id.duolingo)
+        test8.setOnClickListener {
+            val duo= duolingo()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.home_fragment,duo)
+            transaction.addToBackStack(null).commit()
+        }
+
+        //val video = v.findViewById<VideoView>(R.id.video_view)
+
+
+        //val mediaController = MediaController(getActivity())
+        //mediaController.setAnchorView(video)
+
+        //val offlineUri: Uri = Uri.parse("android.resource://"+ getActivity()?.getPackageName()+"/"+R.raw.bangalore_franchise_video)
+        //video.setMediaController(mediaController)
+        //video.setVideoURI(offlineUri)
+        //video.start()
 
 
 
